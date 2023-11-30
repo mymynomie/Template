@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "template:ardoise_block"
+    }
+  }
+}

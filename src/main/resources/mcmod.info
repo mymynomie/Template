@@ -1,0 +1,16 @@
+[
+{
+  "modid": "template",
+  "name": "Template Mod",
+  "description": "Example placeholder mod.",
+  "version": "0.0.0",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["mymynomie"],
+  "credits": "By mymynomie",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
