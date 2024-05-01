@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "template:items/object"
+    "layer0": "test2:items/object"
   }
 }

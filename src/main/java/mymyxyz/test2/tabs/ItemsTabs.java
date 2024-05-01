@@ -1,6 +1,6 @@
-package fr.mymynomie.test2.tabs;
+package mymyxyz.test2.tabs;
 
-import fr.mymynomie.test2.init.ItemsMod;
+import mymyxyz.test2.init.ItemsMod;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 

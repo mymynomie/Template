@@ -1,12 +1,11 @@
-package fr.mymynomie.test2;
+package mymyxyz.test2;
 
-import fr.mymynomie.test2.init.BlocksMod;
-import fr.mymynomie.test2.init.ItemsMod;
-import fr.mymynomie.test2.proxy.ServerProxy;
-import fr.mymynomie.test2.tabs.ItemsTabs;
+import mymyxyz.test2.init.BlocksMod;
+import mymyxyz.test2.init.ItemsMod;
+import mymyxyz.test2.proxy.ServerProxy;
+import mymyxyz.test2.tabs.ItemsTabs;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraftforge.fml.common.API;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;

@@ -1,6 +1,6 @@
-package fr.mymynomie.test2.blocks;
+package mymyxyz.test2.blocks;
 
-import fr.mymynomie.test2.Main;
+import mymyxyz.test2.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

@@ -1,7 +1,7 @@
-package fr.mymynomie.test2.init;
+package mymyxyz.test2.init;
 
-import fr.mymynomie.test2.References;
-import fr.mymynomie.test2.blocks.BlockMod;
+import mymyxyz.test2.References;
+import mymyxyz.test2.blocks.BlockMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;

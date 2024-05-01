@@ -1,3 +1,3 @@
 {
-  "parent": "template:block/ardoise_block"
+  "parent": "test2:block/ardoise_block"
 }
