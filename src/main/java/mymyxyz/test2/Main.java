@@ -1,12 +1,12 @@
-package fr.mymynomie.template;
+package fr.mymynomie.test2;
 
-import fr.mymynomie.template.commands.Object;
-import fr.mymynomie.template.init.BlocksMod;
-import fr.mymynomie.template.init.ItemsMod;
-import fr.mymynomie.template.proxy.ServerProxy;
-import fr.mymynomie.template.tabs.ItemsTabs;
+import fr.mymynomie.test2.init.BlocksMod;
+import fr.mymynomie.test2.init.ItemsMod;
+import fr.mymynomie.test2.proxy.ServerProxy;
+import fr.mymynomie.test2.tabs.ItemsTabs;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraftforge.fml.common.API;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -15,7 +15,6 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
-
 @Mod(modid = References.MODID, name = References.NAME, version = References.VERSION, acceptedMinecraftVersions = References.MINECRAFT_VERSION)
 public class Main {
 
@@ -43,7 +42,6 @@ public class Main {
 
     @EventHandler
     public void serverInit(FMLServerStartingEvent event) {
-        event.registerServerCommand(new Object());
     }
 
 }

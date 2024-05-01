@@ -1,6 +1,6 @@
-package fr.mymynomie.template.tabs;
+package fr.mymynomie.test2.tabs;
 
-import fr.mymynomie.template.init.ItemsMod;
+import fr.mymynomie.test2.init.ItemsMod;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
