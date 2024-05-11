@@ -49,7 +49,6 @@ public class Template {
 
     @EventHandler
     public void serverInit(FMLServerStartingEvent event) {
-        event.registerServerCommand(new Object());
     }
 
 }

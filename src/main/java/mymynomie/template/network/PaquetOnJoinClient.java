@@ -1,7 +1,7 @@
 package mymynomie.template.network;
 
 import io.netty.buffer.ByteBuf;
-import mymyxyz.noctuaAPI.proxy.client.NoctuaIcon;
+import mymynomie.template.proxy.client.Icon;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
@@ -34,7 +34,7 @@ public class PaquetOnJoinClient implements IMessage {
     public static class Handler implements IMessageHandler<PaquetOnJoinClient, IMessage> {
         @Override
         public IMessage onMessage(PaquetOnJoinClient message, MessageContext ctx) {
-            NoctuaIcon.discordRPC(message.player, message.maxplayer);
+            Icon.discordRPC(message.player, message.maxplayer);
             return null;
         }
     }

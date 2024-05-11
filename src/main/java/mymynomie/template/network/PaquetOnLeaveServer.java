@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 
 import java.util.Objects;
 
-import static mymyxyz.noctuaAPI.NoctuaAPI.network;
+import static mymynomie.template.Template.network;
 
 public class PaquetOnLeaveServer implements IMessage {
     public PaquetOnLeaveServer() {
