@@ -1,53 +1,49 @@
-package fr.mymynomie.template.init;
+package mymynomie.template.init;
 
-import fr.mymynomie.template.Main;
-import fr.mymynomie.template.References;
-import fr.mymynomie.template.items.ItemMod;
-import fr.mymynomie.template.items.ItemObjectMod;
+import mymynomie.template.References;
+import mymynomie.template.Template;
+import mymynomie.template.items.ItemMod;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemTool;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Mod.EventBusSubscriber(modid = References.MODID)
 public class ItemsMod {
-
-    public static Item icon;
-    public static Item object;
-
-    public static ItemTool.ToolMaterial MaterialObject;
+    private static final List<Item> itemList = new ArrayList<>();
 
     public static void init() {
+        addItemList(new ItemMod("icon", 1, Template.ItemsTabs), 0);
 
-        MaterialObject = EnumHelper.addToolMaterial("MaterialObject", 0, 3, 0, -4F, 0);
+    }
 
-        icon = new ItemMod("icon");
-        object = new ItemObjectMod("object", MaterialObject).setCreativeTab(Main.ItemsTabs);
+    public static List<Item> getItemList() {
+        return itemList;
+    }
 
+    public static void addItemList(Item item, int id) {
+        getItemList().add(id, item);
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
-        event.getRegistry().registerAll(
-
-                icon, object
-
-        );
+        for (int i = 0; i < getItemList().size(); i++) {
+            event.getRegistry().register(getItemList().get(i));
+        }
     }
 
     @SubscribeEvent
     public static void registerRenders(ModelRegistryEvent event) {
-
-        registerRender(icon);
-        registerRender(object);
-
+        for (int i = 0; i < getItemList().size(); i++) {
+            registerRender(getItemList().get(i));
+        }
     }
 
     private static void registerRender(Item item) {

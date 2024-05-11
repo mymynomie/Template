@@ -1,4 +1,4 @@
-package fr.mymynomie.template.proxy;
+package mymynomie.template.proxy;
 
 public class ServerProxy {
     public void register() {

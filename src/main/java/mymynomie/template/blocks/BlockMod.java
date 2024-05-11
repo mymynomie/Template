@@ -1,6 +1,6 @@
-package fr.mymynomie.template.blocks;
+package mymynomie.template.blocks;
 
-import fr.mymynomie.template.Main;
+import mymynomie.template.Template;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -16,7 +16,7 @@ public class BlockMod extends Block {
         setHarvestLevel("pickaxe", harvestLevel);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(Main.ItemsTabs);
+        setCreativeTab(Template.ItemsTabs);
     }
 
 

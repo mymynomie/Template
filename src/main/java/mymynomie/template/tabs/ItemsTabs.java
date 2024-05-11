@@ -1,6 +1,6 @@
-package fr.mymynomie.template.tabs;
+package mymynomie.template.tabs;
 
-import fr.mymynomie.template.init.ItemsMod;
+import mymynomie.template.init.ItemsMod;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
@@ -12,7 +12,7 @@ public class ItemsTabs extends CreativeTabs {
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(ItemsMod.icon);
+        return new ItemStack(ItemsMod.getItemList().get(0));
     }
 
 }
